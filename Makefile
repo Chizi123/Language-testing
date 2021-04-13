@@ -29,4 +29,4 @@ test: all
 	./test.sh ${EXECUTABLES}
 
 clean:
-	rm main.class c cpp rust fortran
+	rm -f main.class c cpp rust fortran
