@@ -1,0 +1,25 @@
+define prime(n) {
+	i=1;
+	arr[0]=2;
+#	print arr[0]
+#	print "\n"
+	for (j=3; j < n; j++) {
+		is_prime=1;
+		for (k = 0; k < i; k++) {
+			if (arr[k]^2 <= j) {
+				if (j % arr[k] == 0) {
+					is_prime=0;
+					break;
+				}
+			}
+		}
+		if (is_prime) {
+#			print j
+#			print "\n"
+			arr[i]=j;
+			i=i+1;
+		}
+	}
+}
+
+#prime(10)
